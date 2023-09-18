@@ -1,0 +1,124 @@
+.footer {
+	$this: &;
+
+	position: relative;
+	width: 100%;
+	padding-top: 124px;
+	padding-bottom: 60px;
+	border-top: 1px solid $c-white;
+	@include tabletMaxi {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	&__decor-wrap {
+		position: relative;
+		width: 100%;
+		padding: 0 6px;
+		margin-bottom: 100px;
+		overflow: hidden;
+		@include tabletMaxi {
+			margin-bottom: 30px;
+		}
+	}
+	&__decor {
+		width: 100%;
+		font-family: $font-inter;
+		white-space: nowrap;
+	}
+	&__inner {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+	&__col {
+		display: flex;
+		justify-content: space-between;
+		@include laptopMini {
+			flex-direction: column;
+		}
+		@include mobile {
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		}
+		li {
+			a {
+				transition: $time-sm;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+
+		&--first {
+			min-width: 488px;
+			@include laptopMini {
+				min-width: calc(100% / 3);
+			}
+			@include mobile {
+				min-width: 100%;
+			}
+		}
+		&--second {
+			min-width: 370px;
+			@include laptopMini {
+				min-width: calc(100% / 3);
+			}
+			@include mobile {
+				min-width: 100%;
+			}
+		}
+		&--third {
+			min-width: 247px;
+			@include laptopMini {
+				min-width: calc(100% / 3);
+			}
+			@include mobile {
+				min-width: 100%;
+			}
+			#{$this}__menu {
+				display: flex;
+				flex-direction: column;
+				li {
+					&:last-child {
+						margin-top: auto;
+					}
+				}
+			}
+		}
+	}
+	&__menu {
+		@include laptopMini {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+		}
+		li {
+			&:not(:last-child) {
+				margin-bottom: 16px;
+			}
+		}
+		a {
+			display: flex;
+		}
+	}
+
+	&--beige {
+		margin-top: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		#{$this}__decor-wrap {
+			margin-bottom: 0px;
+			#{$this}__decor {
+				font-size: 30px;
+			}
+		}
+		#{$this}__inner {
+			display: none;
+		}
+	}
+}

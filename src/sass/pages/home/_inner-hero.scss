@@ -1,0 +1,301 @@
+.inner-hero {
+	$this: &;
+
+	position: relative;
+	width: 100%;
+	padding-top: 145px;
+	padding-bottom: 60px;
+	@include tabletMaxi {
+		padding-top: 60px;
+	}
+
+	&__bg-decor {
+		position: absolute;
+		top: -115px;
+		left: 0;
+		z-index: 3;
+		pointer-events: none;
+	}
+
+	&__wrapper {
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+		@include mobile{
+			z-index: 4;
+		}
+	}
+	&__title {
+		position: relative;
+		z-index: 4;
+	}
+	&__lottie-wrapper {
+		position: absolute;
+		top: 6%;
+		left: 50%;
+		transform: translate(-48%, 0%);
+		width: 100%;
+		max-width: 1400px;
+		min-height: 900px;
+		height: auto !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden !important;
+		pointer-events: none;
+		@include mobile {
+			top: -3px;
+			min-height: 400px;
+		}
+	}
+	&__lottie-block {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		max-height: 800px;
+		z-index: 1;
+	}
+	&__lottie-control {
+		position: absolute;
+		width: 100%;
+		height: 500px;
+		z-index: 2;
+	}
+
+	&__filter-block {
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&__slider-container {
+		position: relative;
+		padding-top: 275px;
+		padding-bottom: 387px;
+		z-index: 20;
+		overflow: hidden;
+		@include tabletMaxi {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+	}
+
+	&__main-slider {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		overflow: visible;
+		z-index: 2;
+		transition: $time-xl;
+
+		&.noise-effect {
+			filter: url('#noise');
+		}
+
+		.swiper-wrapper {
+			display: flex;
+			align-items: center;
+			overflow: visible;
+		}
+		.swiper-slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform $time-xl;
+			transform: translate(0%, 0%) scale(1);
+			&.swiper-slide-next {
+				transform: translate(0%, -5%) scale(0.5) rotateY(90deg);
+			}
+			&.swiper-slide-prev {
+				transform: translate(0%, -45%) scale(0.4) rotateY(-60deg);
+			}
+		}
+
+		#{$this}__slider-image {
+			width: 644px;
+			height: 638px;
+			@include mobile {
+				width: 280px;
+				height: auto;
+			}
+			a {
+				display: block;
+			}
+			img {
+				height: 638px;
+				@include mobile {
+					height: 280px;
+				}
+			}
+		}
+	}
+
+	&__slider-left-3d {
+		position: absolute;
+		top: 41%;
+		left: 21%;
+		width: 100%;
+		max-width: 730px;
+		perspective: 1000px;
+		transform: translate(-50%, 0%);
+		z-index: 1;
+		pointer-events: none;
+		@include mobile {
+			top: 18%;
+			left: -9%;
+		}
+	}
+	&__left-slider {
+		width: 100%;
+		height: 500px;
+		display: flex;
+		align-items: center;
+		transform-style: preserve-3d;
+		transform: rotateY(200deg);
+		transition: transform $time-md;
+		overflow: hidden;
+
+		.swiper-wrapper {
+			display: flex;
+			align-items: center;
+		}
+		.swiper-slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform $time-xl;
+			transform: translate(0%, 0%) scale(1) rotateY(-180deg);
+			perspective: 300px;
+			&.swiper-slide-active {
+				transform: rotateY(3deg) rotateZ(-1deg) rotateY(-180deg);
+			}
+			&.swiper-slide-next {
+				transform: translate(-15px, 80px) rotateY(-180deg);
+				perspective: 300px;
+				.image {
+					transform: rotateY(25deg);
+				}
+			}
+		}
+		#{$this}__slider-image {
+			width: 150px;
+			height: 150px;
+			transition: transform $time-xl;
+			@include mobile {
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+
+	&__slider-top-3d {
+		position: absolute;
+		top: 21%;
+		left: 3%;
+		width: 100%;
+		max-width: 635px;
+		perspective: 1000px;
+		z-index: 1;
+		pointer-events: none;
+		@include mobile {
+			top: 5%;
+			left: -14%;
+		}
+	}
+	&__top-slider {
+		width: 100%;
+		height: 600px;
+		display: flex;
+		align-items: center;
+		transform-style: preserve-3d;
+		transform: rotateY(215deg);
+		transition: transform $time-md;
+		overflow: hidden;
+
+		.swiper-wrapper {
+			display: flex;
+			align-items: center;
+		}
+		.swiper-slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform $time-xl;
+			transform: translate(0px, 60px) scale(1) rotateY(-180deg);
+			&--first {
+				transform: translate(0%, -180px) scale(1) rotateY(-180deg)
+					rotateZ(-2deg);
+			}
+			&--second {
+				transform: translate(0%, -95px) scale(1) rotateY(-180deg) rotateZ(-3deg);
+			}
+
+			&--third {
+				transform: translate(0%, -30px) scale(1) rotateY(-180deg);
+			}
+		}
+		#{$this}__slider-image {
+			width: 150px;
+			height: 150px;
+			transition: transform $time-xl;
+			@include mobile {
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+
+	&__slider-right-3d {
+		position: absolute;
+		top: 38%;
+		right: 1%;
+		width: 55%;
+		max-width: 650px;
+		perspective: 1000px;
+		z-index: 1;
+		pointer-events: none;
+		@include mobile {
+			top: 15%;
+			right: -4%;
+		}
+	}
+
+	&__right-slider {
+		width: 100%;
+		height: 500px;
+		display: flex;
+		align-items: center;
+		transform-style: preserve-3d;
+		transform: rotateY(-180deg);
+		transition: transform $time-md;
+		overflow: hidden;
+
+		.swiper-wrapper {
+			display: flex;
+			align-items: center;
+		}
+		.swiper-slide {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: transform $time-xl;
+			transform: translate(0%, 0%) scale(0.8) rotateY(-180deg);
+			&.swiper-slide-active {
+				transform: translate(0px, -35px) rotateY(-215deg) scale(1);
+			}
+			&.swiper-slide-next {
+				transform: translate(26px, -27px) scale(0.8) rotateY(-180deg);
+			}
+			&.swiper-slide-prev {
+				transform: translate(0, -50px) scale(1) rotateY(-235deg);
+			}
+		}
+		#{$this}__slider-image {
+			width: 200px;
+			transition: transform $time-xl;
+			@include mobile {
+				width: 100px;
+			}
+		}
+	}
+}

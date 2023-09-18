@@ -1,0 +1,55 @@
+.wrapper {
+	padding: 0 $wrap-xl;
+
+	@include laptop {
+		padding: 0 $wrap-md;
+	}
+
+	@include tabletMaxi {
+		padding: 0 $wrap-lg;
+	}
+
+	@include mobile {
+		padding: 0 $wrap-sm;
+	}
+
+	&--reset {
+		padding: 0;
+
+		@include mobile {
+			padding: 0;
+		}
+	}
+
+	&--mob-reset {
+		@include mobile {
+			padding: 0;
+		}
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: $container-big;
+	margin: 0 auto;
+
+	&--xl {
+		max-width: $container-xl;
+	}
+
+	&--m {
+		max-width: $container-m;
+	}
+
+	&--s {
+		max-width: $container;
+	}
+
+	&--sm {
+		max-width: $container-sm;
+	}
+
+	&--full {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,29 @@
+// Basic styles
+@import 'reset';
+@import 'common/fonts';
+@import 'vars';
+@import 'mixins/general';
+@import 'mixins/media';
+@import 'generated/**/*';
+
+// Animations styles
+@import 'common/animations';
+
+// Libs
+@import '../../node_modules/swiper/swiper.scss';
+
+// Common styles
+@import 'common/default';
+@import 'common/typo';
+@import 'common/layout';
+@import 'common/links';
+
+// Styles for JS-helpers
+
+// Blocks styles
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/burger-menu';
+
+// Home Page styles
+@import 'pages/home/_inner-hero';

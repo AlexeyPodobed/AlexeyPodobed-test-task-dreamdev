@@ -1,0 +1,53 @@
+[data-animation-fadeY] {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.js-next-slide-animation {
+	animation: nextSlideAnim 1.5s ease-in-out;
+}
+
+@keyframes nextSlideAnim {
+	0% {
+		transform: translate(0%, -5%) scale(0.5) rotateY(90deg);
+	}
+	100% {
+		transform: translate(0%, 0%) scale(1) rotateY(0deg);
+	}
+}
+
+.js-prev-slide-animation {
+	animation: prevSlideAnim 1.5s ease-in-out;
+}
+
+@keyframes prevSlideAnim {
+	0% {
+		transform: translate(0%, -45%) scale(0.4) rotateY(-60deg);
+	}
+	100% {
+		transform: translate(0%, 0%) scale(1) rotateY(0deg);
+	}
+}
+
+.marquee-animation {
+	animation: marquee 8s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	// 48% {
+	//     transform: translateX(-80%);
+	//     animation-timing-function: linear;
+	// }
+	50% {
+		transform: translateX(-80%);
+		animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	100% {
+		transform: translateX(0%);
+		animation-timing-function: linear;
+	}
+}

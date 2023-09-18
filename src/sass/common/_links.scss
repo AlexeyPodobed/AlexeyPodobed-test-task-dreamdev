@@ -1,0 +1,11 @@
+.link {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: calc(30 / 22);
+
+	@include hover {
+		// font-weight: 600;
+		// text-shadow: ;
+		// text-shadow: 1px 0 0 currentColor;
+	}
+}

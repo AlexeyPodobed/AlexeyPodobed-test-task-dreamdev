@@ -1,0 +1,291 @@
+.title {
+	font-family: $font-default;
+	font-weight: 400;
+	line-height: 1;
+	letter-spacing: 1px;
+
+	&--xxl {
+		font-size: 130px;
+		letter-spacing: 0.24px;
+
+		@include tabletMaxi {
+			font-size: 96px;
+		}
+
+		@include mobile {
+			font-size: 46px;
+		}
+
+		@include mobile-micro {
+			font-size: 44px;
+		}
+	}
+
+	&--x {
+		font-size: 126px;
+		// line-height: calc(151/126);
+		letter-spacing: 0.24px;
+
+		@include tabletMaxi {
+			font-size: 96px;
+		}
+
+		@include mobile {
+			font-size: 46px;
+		}
+	}
+
+	&--xl {
+		font-size: 80px;
+
+		@include tabletMaxi {
+			font-size: 48px;
+		}
+
+		@include mobile {
+			font-size: 24px;
+		}
+	}
+
+	&--l {
+		font-size: 70px;
+		line-height: calc(90 / 70);
+
+		@include tabletMaxi {
+			font-size: 44px;
+		}
+
+		@include mobile {
+			font-size: 26px;
+		}
+	}
+
+	&--lm {
+		font-size: 64px;
+		line-height: calc(64 / 64);
+		letter-spacing: 1.3px;
+
+		@include tabletMaxi {
+			font-size: 44px;
+		}
+
+		@include mobile {
+			font-size: 20px;
+		}
+	}
+
+	&--m {
+		font-size: 48px;
+		line-height: calc(52 / 48);
+
+		@include tabletMaxi {
+			font-size: 24px;
+		}
+	}
+
+	// &--s {
+	// 	font-size: 40px;
+	// 	line-height: calc(52 / 40);
+
+	// 	@include tabletMaxi {
+	// 		font-size: 26px;
+	// 	}
+
+	// 	@include mobile {
+	// 		font-size: 20px;
+	// 	}
+	// }
+
+	&--xs {
+		font-size: 24px;
+		line-height: calc(31 / 24);
+
+		// @include tabletMaxi {
+		// 	font-size: 26px;
+		// }
+
+		// @include mobile {
+		// 	font-size: 20px;
+		// }
+	}
+
+	&--xxs {
+		font-size: 18px;
+		line-height: 1;
+
+		@include tabletMaxi {
+			font-size: 18px;
+		}
+	}
+	&--xxxs {
+		font-size: 16px;
+		line-height: calc(25 / 16);
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+
+	&--semi-bold {
+		font-weight: 600;
+	}
+	&--uppercase {
+		text-transform: uppercase;
+	}
+}
+
+.txt {
+	p,
+	ul,
+	ol,
+	li {
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+	}
+
+	b,
+	strong {
+		font-weight: 700;
+	}
+
+	i,
+	em {
+		font-style: italic;
+	}
+
+	// a {
+	// 	text-decoration: underline;
+
+	// 	@include hover {
+	// 		text-decoration: none;
+	// 	}
+	// }
+
+	&--xl {
+		font-size: 40px;
+		line-height: calc(50.28 / 40);
+
+		@include mobile {
+			font-size: 20px;
+			line-height: 1.25;
+		}
+	}
+
+	&--x {
+		font-size: 34px;
+		line-height: 1.25;
+		letter-spacing: 0.68px;
+
+		@include mobile {
+			font-size: 18px;
+		}
+	}
+
+	&--l {
+		//default body styles
+		font-size: 28px;
+		line-height: calc(35.2 / 28);
+
+		@include mobile {
+			font-size: 18px;
+			line-height: calc(22 / 18);
+		}
+	}
+
+	&--lm {
+		//default body styles
+		font-size: 24px;
+		line-height: 1;
+
+		@include mobile {
+			font-size: 18px;
+		}
+	}
+
+	&--m {
+		font-size: 21px;
+		line-height: calc(35 / 21);
+		letter-spacing: 0.42px;
+
+		@include mobile {
+			font-size: 18px;
+			line-height: calc(28 / 18);
+			line-height: 1;
+		}
+	}
+
+	&--sm {
+		font-size: 20px;
+		line-height: 1;
+		letter-spacing: 0.4px;
+
+		@include mobile {
+			font-size: 18px;
+			line-height: calc(22 / 18);
+		}
+	}
+
+	&--sl {
+		font-size: 18px;
+		line-height: calc(28 / 18);
+	}
+
+	&--s {
+		font-size: 16px;
+		line-height: 1;
+		letter-spacing: 0.7;
+	}
+	&--xs {
+		font-size: 11px;
+		line-height: 1;
+	}
+	&--xxs {
+		font-size: 8px;
+		line-height: calc(10.5 / 8);
+	}
+
+	&--bold {
+		font-weight: 700;
+	}
+
+	&--semi-bold {
+		font-weight: 600;
+	}
+
+	&--light-bold {
+		font-weight: 500;
+	}
+}
+
+.color-white {
+	color: $c-white;
+}
+
+.color-d-white {
+	color: $d-white;
+}
+
+.color-g-white {
+	color: $g-white;
+}
+
+.color-black {
+	color: $c-black;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}

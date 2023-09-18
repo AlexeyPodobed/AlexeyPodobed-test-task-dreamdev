@@ -1,0 +1,35 @@
+<header class="header js-header">
+	<div class="wrapper">
+		<div class="container">
+			<div class="header__inner">
+				<ul class="header__links-wrap">
+					<li class="header__link">
+						<a href="" class="link color-d-white">About us</a>
+					</li>
+					<li class="header__link">
+						<a href="" class="link color-d-white">Portfolio</a>
+					</li>
+					<li class="header__link">
+						<a href="" class="link color-d-white">Reviews</a>
+					</li>
+					<li class="header__link">
+						<a href="" class="link color-d-white">Contact</a>
+					</li>
+				</ul>
+
+				<a href="" class="header__contact-mail link color-white">{{ mixins.inline('contact') }} <span>info@dremdevdesign.com</span></a>
+
+				<div class="header__burger-btn burger-btn js-burger-btn">
+					<span class="burger-btn__inner">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+{% include 'blocks/burger-menu/_burger-menu.twig' %}

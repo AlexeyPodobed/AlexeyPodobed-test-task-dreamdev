@@ -1,0 +1,55 @@
+.burger-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: map-get($z-index, burger-menu);
+	width: 100%;
+	padding-top: 140px;
+	display: flex;
+	flex-direction: column;
+	background: $l-black;
+	overflow: auto;
+    transition: $time-lg;
+    pointer-events: none;
+    transform: translate(110%, 0);
+	@include fullheight();
+
+    &.is-open{
+        pointer-events: visible;
+        transform: translate(0%, 0);
+    }
+
+	&__bg-decor {
+		position: absolute;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+		z-index: 1;
+	}
+
+	&__content {
+		position: relative;
+		width: 100%;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 2;
+	}
+
+	&__links-wrap {
+		margin-bottom: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__link {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	&__contact-mail {
+		margin-top: auto;
+		display: flex;
+	}
+}

@@ -1,0 +1,20 @@
+<!-- prettier-ignore -->
+{% import "mixins/_mixins.twig" as mixins %}
+{% set inline = mixins.inline %}
+{% set svg = mixins.svg %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{% include './_head.twig' %}
+
+	<body class="body" data-page-name="{{ pageName }}">
+		{% include 'blocks/_header.twig' %}
+
+		<!-- prettier-ignore -->
+		{% block content %}{% endblock %}
+
+		{% include 'blocks/_footer.twig' %}
+
+		<script src="/js/app.js"></script>
+	</body>
+</html>

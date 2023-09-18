@@ -1,0 +1,12 @@
+{# <svg>
+    <filter id="noise">
+        <feTurbulence type="turbulence" baseFrequency=".001" id="turbulence" numOctaves="5"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="50"></feDisplacementMap>
+    </filter>
+</svg> #}
+<svg>
+    <filter id="noise">
+        <feTurbulence type="turbulence" baseFrequency="0" id="turbulence" octaves="0"></feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="1"></feDisplacementMap>
+    </filter>
+</svg>

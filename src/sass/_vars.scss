@@ -1,0 +1,88 @@
+// breakpoints (desktop first)
+$b-mobile-micro: 374px;
+$b-mobile-mini: 479px;
+$b-mobile-midi: 639px;
+$b-mobile: 767px;
+$b-tablet: 894px;
+$b-tablet-maxi: 1099px;
+$b-labtop-mini: 1279px;
+$b-laptop: 1439px;
+$b-desktop: 1899px;
+$b-desktop-mini: 1921px;
+$b-desktop-maxi: 2239px;
+$b-sm-height: 700px;
+
+// fullpage slider helpers
+$fs-laptop-width: 1280;
+$fs-laptop-height: 720;
+$fs-tablet-width: 768;
+$fs-mobile-width: 375;
+
+//fonts
+$font-default: 'Syne', tahoma, arial, sans-serif;
+$font-spacegrotesk: 'SpaceGrotesk', tahoma, arial, sans-serif;
+$font-inter: 'Inter', tahoma, arial, sans-serif;
+$font-accent: helvetica, tahoma, arial, sans-serif;
+
+//colors
+$c-black: #000;
+$c-white: #fff;
+
+
+$d-white: #FFFEFD;
+$g-white: #FDFDFD;
+
+$l-black: #141414;
+
+$c-purlpe: #7127ba;
+$m-purple: #A362FF;
+$b-purple: #1A0B2E;
+$d-purple: #251c31;
+$w-purple: #693b93;
+$g-purple: #2c1250;
+$a-purple: #2B0B3A;
+
+$c-blue: #1877f2;
+$l-blue: #CCD6F6;
+
+$c-accent: #fff;
+$c-gray: #c4c4c4;
+$d-gray: #b0b0b0;
+
+// timing
+$time-sm: 300ms;
+$time-md: 500ms;
+$time-lg: 800ms;
+$time-xl: 1500ms;
+$time-xxl: 2000ms;
+$time-xxxl: 2500ms;
+
+// layout
+$container: 1240px;
+$container-sm: 1030px;
+$container-m: 1520px;
+$container-big: 1836px;
+$container-xl: 1920px;
+$wrap-xl: 30px;
+$wrap-lg: 25px;
+$wrap-md: 20px;
+$wrap-sm: 18px;
+
+// tags
+$h: 'h1, h2, h3, h4, h5, h6';
+
+/* stylelint-disable-next-line */
+$input-txt: 'input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea';
+
+// z-index
+$z-index: (
+	cursor: 100000000,
+	modal: 1200,
+	overlay: 1100,
+	header: 1000,
+	burger-menu: 900,
+	footer: 900,
+	dropdown: 800,
+	form: 500,
+	scroll-btn: 10,
+);

@@ -1,0 +1,65 @@
+<div class="burger-menu js-burger-menu">
+	<div class="burger-menu__bg-decor burger-menu__bg-decor--first">
+		<img src="../img/home/bg-decor.svg" alt="" />
+	</div>
+	<div class="wrapper">
+		<div class="container">
+			<div class="burger-menu__content">
+				<ul class="burger-menu__links-wrap">
+					<li class="burger-menu__link">
+						<a href="" class="link color-d-white">About us</a>
+					</li>
+					<li class="burger-menu__link">
+						<a href="" class="link color-d-white">Portfolio</a>
+					</li>
+					<li class="burger-menu__link">
+						<a href="" class="link color-d-white">Reviews</a>
+					</li>
+					<li class="burger-menu__link">
+						<a href="" class="link color-d-white">Contact</a>
+					</li>
+				</ul>
+
+				<a href="" class="header__contact-mail burger-menu__contact-mail link color-white">{{ mixins.inline('contact') }} <span>info@dremdevdesign.com</span></a>
+			</div>
+		</div>
+	</div>
+
+	{% set footerMode = 'footer--beige' %} {% include 'blocks/_footer.twig' %}
+</div>
+
+{# <div class="burger-menu js-burger-menu">
+	<div class="wrapper burger-menu__wrapper">
+		<div class="container burger-menu__container">
+			<div class="burger-menu__content">
+				<div class="menu-block">
+					<div class="burger-menu__content-inner">
+						<div class="menu-block__inner">
+							<ul>
+								<li>
+									<a href="#">PEOPLE</a>
+								</li>
+								<li class="text-center">
+									<a href="#">PRODUCE</a>
+								</li>
+								<li>
+									<a href="#">PARTNERSHIPS</a>
+								</li>
+								<li class="text-center">
+									<a href="#">PLANET</a>
+								</li>
+							</ul>
+						</div>
+						<a class="circle-btn burger-menu__circle-btn" href="#">
+							{{mixins.inline('vacanties')}}
+						</a>
+					</div>
+				</div>
+				<div class="burger-menu__tablet-btn">
+					<a class="btn btn--white" href="#">contact us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% set footerMode = 'footer--beige' %} {% include 'blocks/_footer.twig' %}
+</div> #}
